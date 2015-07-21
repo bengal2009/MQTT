@@ -17,6 +17,11 @@ public class JsonExam {
             map.put("name", "Jacky");
             map.put("age", 30);
             map.put("gender", true);
+//            jsonObjSend.put("elementi", new JSONArray(new Object[] { "value1", "value2", "value3"} ));
+           /* JSONArray arr = new JSONArray();
+            arr.put("value1");
+            arr.put("value2");
+            jsonObjSend.put("elementi", arr);*/
             JSONObject jsonObjectJacky = new JSONObject(map);
             System.out.println("2: " + jsonObjectJacky);
             jsonObjectJacky.put("height", 180);
