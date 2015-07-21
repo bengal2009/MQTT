@@ -102,4 +102,17 @@ public static void JsonParse_2()
             System.err.println("Error: " + e.getMessage());
         }
     }
+    /*JSONObject jsonAddr = new JSONObject();
+    jsonAddr.put("city", "厦门市");
+    jsonAddr.put("street", "博物馆");
+
+    JSONObject json = new JSONObject();
+    json.put("user", "wzj");//增加key值
+    json.put("age", 12);
+    json.put("addr", jsonAddr); //增加一个对象到该key下,嵌套json
+    json.put("tel", "1865010");
+    json.accumulate("tel", "1516003");//积累这个value到该key下，如果key存在，则该key的值为数组
+    json.put("age", 20);//如果该key已经存在则覆盖原来的值
+    json.put("lover", "secret");*/
+
 }
