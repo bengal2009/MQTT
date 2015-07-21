@@ -42,8 +42,12 @@ public class MQTTClient {
             connection = mqtt.blockingConnection();
             //MQTT?接的?建
             connection.connect();
+
             //?建相?的MQTT 的主?列表
             Topic[] topics = {new Topic("hello/world", QoS.AT_LEAST_ONCE)};
+//            Topic topic=new Topic(TEST_TOPIC,QoS.AT_MOST_ONCE);
+            String payload1="Message from Benny";
+            connection.publish(topics[0].name().toString(),payload1.getBytes(),QoS.AT_LEAST_ONCE,false);
             //??相?的主?信息
             byte[] qoses = connection.subscribe(topics);
             //
